@@ -4,26 +4,7 @@ folder_name = "TN-Romance-Floral"
 os.makedirs(folder_name, exist_ok=True)
 
 files = {
-    "index.html": "<!DOCTYPE html><html><body><h1>TN Romance Floral - Home</h1></body></html>",
-    "shop.html": "<!DOCTYPE html><html><body><h1>Shop - TN Romance Floral</h1></body></html>",
-    "gallery.html": "<!DOCTYPE html><html><body><h1>Gallery</h1></body></html>",
-    "about.html": "<!DOCTYPE html><html><body><h1>About Us</h1></body></html>",
-    "contact.html": "<!DOCTYPE html><html><body><h1>Contact Us</h1></body></html>",
-    "style.css": "body {font-family: Poppins; background:#fff8fa; color:#444;}",
-    "script.js": "function orderNow(productName){alert('You selected '+productName);}"
-}
-
-for name, content in files.items():
-    with open(os.path.join(folder_name, name), "w", encoding="utf-8") as f:
-        f.write(content)
-
-with zipfile.ZipFile(f"{folder_name}.zip", "w", zipfile.ZIP_DEFLATED) as zipf:
-    for name in files:
-        zipf.write(os.path.join(folder_name, name), arcname=name)
-
-print("✅ ZIP file created successfully: TN-Romance-Floral.zip")
-
-<!DOCTYPE html>
+    "index.html<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -55,8 +36,12 @@ print("✅ ZIP file created successfully: TN-Romance-Floral.zip")
   <script src="script.js"></script>
 </body>
 </html>
-
-/* Global Styles */
+": "<!DOCTYPE html><html><body><h1>TN Romance Floral - Home</h1></body></html>",
+    "shop.html": "<!DOCTYPE html><html><body><h1>Shop - TN Romance Floral</h1></body></html>",
+    "gallery.html": "<!DOCTYPE html><html><body><h1>Gallery</h1></body></html>",
+    "about.html": "<!DOCTYPE html><html><body><h1>About Us</h1></body></html>",
+    "contact.html": "<!DOCTYPE html><html><body><h1>Contact Us</h1></body></html>",
+    "style.css/* Global Styles */
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
@@ -113,3 +98,17 @@ body {
 .cta-button:hover {
   background: #ff69b4; /* hot pink hover */
 }
+": "body {font-family: Poppins; background:#fff8fa; color:#444;}",
+    "script.js": "function orderNow(productName){alert('You selected '+productName);}"
+}
+
+for name, content in files.items():
+    with open(os.path.join(folder_name, name), "w", encoding="utf-8") as f:
+        f.write(content)
+
+with zipfile.ZipFile(f"{folder_name}.zip", "w", zipfile.ZIP_DEFLATED) as zipf:
+    for name in files:
+        zipf.write(os.path.join(folder_name, name), arcname=name)
+
+print("✅ ZIP file created successfully: TN-Romance-Floral.zip")
+
