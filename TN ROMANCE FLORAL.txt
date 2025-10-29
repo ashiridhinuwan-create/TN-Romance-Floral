@@ -37,8 +37,35 @@ files = {
 </body>
 </html>
 ": "<!DOCTYPE html><html><body><h1>TN Romance Floral - Home</h1></body></html>",
-    "shop.html": "<!DOCTYPE html><html><body><h1>Shop - TN Romance Floral</h1></body></html>",
-    "gallery.html": "<!DOCTYPE html><html><body><h1>Gallery</h1></body></html>",
+    "shop.html<!-- Shop -->
+<section id="shop">
+<h2>Shop Our Flowers</h2>
+<div class="products">
+  <div class="product">
+    <img src="images/bouquet1.jpg" alt="Roses Bouquet">
+    <h3>Roses Bouquet</h3>
+    <p>12 fresh red roses</p>
+    <button onclick="orderNow('Roses Bouquet')">Order Now</button>
+  </div>
+  <div class="product">
+    <img src="images/bouquet2.jpg" alt="Mixed Flowers">
+    <h3>Mixed Flowers</h3>
+    <p>Seasonal mixed arrangement</p>
+    <button onclick="orderNow('Mixed Flowers')">Order Now</button>
+  </div>
+</div>
+</section>
+": "<!DOCTYPE html><html><body><h1>Shop - TN Romance Floral</h1></body></html>",
+    "gallery.html<!-- Gallery -->
+<section id="gallery">
+<h2>Gallery</h2>
+<div class="gallery">
+  <img src="images/gallery1.jpg" alt="Flower 1">
+  <img src="images/gallery2.jpg" alt="Flower 2">
+  <img src="images/gallery3.jpg" alt="Flower 3">
+</div>
+</section>
+": "<!DOCTYPE html><html><body><h1>Gallery</h1></body></html>",
     "about.html": "<!DOCTYPE html><html><body><h1>About Us</h1></body></html>",
     "contact.html": "<!DOCTYPE html><html><body><h1>Contact Us</h1></body></html>",
     "style.css/* Global Styles */
