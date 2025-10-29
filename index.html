@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TN Romance Floral</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    /* Global Styles */
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff8fa;
+      color: #444;
+    }
+    a { text-decoration: none; }
+
+    /* Navigation Bar */
+    .navbar {
+      background: #ffe4e1;
+      padding: 15px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    .navbar ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    .navbar ul li a {
+      color: #b22222;
+      font-weight: 600;
+    }
+    .navbar ul li a:hover {
+      color: #ff69b4;
+    }
+
+    /* Sections */
+    section {
+      padding: 80px 30px;
+    }
+
+    /* Hero Section */
+    .hero {
+      text-align: left;
+      padding: 120px 30px;
+      background: linear-gradient(to bottom right, #ffe4e1, #fff0f5);
+    }
+    .hero h1 {
+      font-size: 3rem;
+      color: #b22222;
+      margin-bottom: 10px;
+    }
+    .hero p {
+      font-size: 1.5rem;
+      color: #ff69b4;
+      margin-bottom: 20px;
+    }
+    .cta-button {
+      padding: 12px 25px;
+      background: #b22222;
+      color: #fff;
+      border-radius: 8px;
+      font-weight: 600;
+    }
+    .cta-button:hover {
+      background: #ff69b4;
+    }
+
+    /* Shop Section */
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: #fff0f5;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    .product button {
+      margin-top: 10px;
+      padding: 10px 20px;
+      background: #b22222;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+    .product button:hover {
+      background: #ff69b4;
+    }
+
+    /* Gallery Section */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* About Section */
+    .about p {
+      max-width: 800px;
+      line-height: 1.6;
+    }
+
+    /* Contact Section */
+    .contact form {
+      max-width: 500px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .contact input, .contact textarea {
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+      font-family: 'Poppins', sans-serif;
+    }
+    .contact button {
+      padding: 10px;
+      background: #b22222;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .contact button:hover {
+      background: #ff69b4;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ffe4e1;
+      color: #b22222;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <ul>
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#shop">Shop</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <h1>TN Romance Floral</h1>
+    <p>Beautiful flowers for every moment of love</p>
+    <a href="#shop" class="cta-button">Shop Now</a>
+  </section>
+
+  <!-- Shop Section -->
+  <section id="shop">
+    <h2>Shop Our Flowers</h2>
+    <div class="products">
+      <div class="product">
+        <h3>Roses Bouquet</h3>
+        <p>12 fresh red roses</p>
+        <button onclick="orderNow('Roses Bouquet')">Order Now</button>
+      </div>
+      <div class="product">
+        <h3>Mixed Flowers</h3>
+        <p>Seasonal mixed arrangement</p>
+        <button onclick="orderNow('Mixed Flowers')">Order Now</button>
+      </div>
+      <div class="product">
+        <h3>Sunflowers</h3>
+        <p>Bright yellow sunflowers</p>
+        <button onclick="orderNow('Sunflowers')">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://via.placeholder.com/300x200?text=Flower+1" alt="Flower 1">
+      <img src="https://via.placeholder.com/300x200?text=Flower+2" alt="Flower 2">
+      <img src="https://via.placeholder.com/300x200?text=Flower+3" alt="Flower 3">
+      <img src="https://via.placeholder.com/300x200?text=Flower+4" alt="Flower 4">
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>
+      TN Romance Floral is your one-stop shop for romantic flowers. 
+      We deliver fresh blooms with love and elegance to every special moment.
+    </p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 TN Romance Floral. All rights reserved.
+  </footer>
+
+  <script>
+    function orderNow(productName){
+      alert('You selected '+productName);
+    }
+    function submitForm(e){
+      e.preventDefault();
+      alert('Thank you for contacting us!');
+      e.target.reset();
+    }
+  </script>
+</body>
+</html>
+
